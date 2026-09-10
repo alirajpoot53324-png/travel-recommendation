@@ -8,6 +8,14 @@ const recommendations = [
     keywords: ["beach", "beaches", "maldives", "bali", "coast", "coastal"]
   },
   {
+    category: "Beach",
+    title: "Shores worth slowing down for",
+    description: "Find peaceful coastlines, warm sunsets, and easy days beside the sea.",
+    destinations: "Bali · Maldives",
+    images: ["images/beach1.jpg", "images/beach2.jpg"],
+    keywords: ["beach", "beaches", "shore", "coast", "coastal"]
+  },
+  {
     category: "Temple",
     title: "Sacred places",
     description: "Discover beautiful temples where architecture, history, and quiet moments meet.",
@@ -82,6 +90,14 @@ function searchRecommendations(event) {
   displayRecommendations(matches, matches.length ? `Found ${matches.length} recommendation${matches.length === 1 ? "" : "s"}` : "No recommendations found");
 }
 
+function clearSearch() {
+  const input = document.getElementById("searchInput");
+  if (!input) return;
+
+  input.value = "";
+  displayRecommendations(recommendations, "Showing all recommendations");
+}
+
 function handleContactForm(event) {
   event.preventDefault();
   const successMessage = document.getElementById("successMessage");
@@ -94,6 +110,9 @@ if (searchForm) {
   searchForm.addEventListener("submit", searchRecommendations);
   displayRecommendations(recommendations, "Showing all recommendations");
 }
+
+const clearButton = document.getElementById("clearButton");
+if (clearButton) clearButton.addEventListener("click", clearSearch);
 
 const contactForm = document.getElementById("contactForm");
 if (contactForm) contactForm.addEventListener("submit", handleContactForm);
