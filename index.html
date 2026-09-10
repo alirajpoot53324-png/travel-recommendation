@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Travel Explorer helps you discover beautiful beaches, temples, and countries for your next journey.">
+  <title>Travel Explorer | Discover Your Next Destination</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar container" aria-label="Main navigation">
+      <a class="brand" href="index.html"><span class="brand-mark">TE</span><span>Travel Explorer</span></a>
+      <div class="nav-links">
+        <a class="active" href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact Us</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-shape hero-shape-one"></div>
+      <div class="hero-shape hero-shape-two"></div>
+      <div class="hero-content container">
+        <p class="eyebrow">Your next story starts here</p>
+        <h1>Explore Your<br><em>Next Destination</em></h1>
+        <p class="hero-copy">Find sunlit shores, timeless temples, and unforgettable places to add to your travel list.</p>
+        <form class="search-form" id="searchForm">
+          <label class="sr-only" for="searchInput">Search for a destination</label>
+          <span class="search-icon" aria-hidden="true">⌕</span>
+          <input id="searchInput" type="search" placeholder="Try beach, temple, Japan..." autocomplete="off">
+          <button class="button button-dark" type="submit">Search</button>
+        </form>
+        <p class="search-hint">Popular: beach &nbsp; temple &nbsp; Japan &nbsp; India</p>
+      </div>
+      <div class="hero-stamp" aria-hidden="true"><span>TRAVEL</span><strong>BEYOND<br>THE MAP</strong></div>
+    </section>
+
+    <section class="recommendations section container" id="recommendations">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Curated for curious minds</p>
+          <h2>Places worth the journey</h2>
+        </div>
+        <p id="resultMessage" class="result-message">Showing all recommendations</p>
+      </div>
+      <div id="recommendationGrid" class="recommendation-grid"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-content"><p>Travel Explorer</p><p>Discover more. Wander further.</p></div>
+  </footer>
+</body>
+</html>
