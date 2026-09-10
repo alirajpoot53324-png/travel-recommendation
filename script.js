@@ -24,6 +24,14 @@ const recommendations = [
     keywords: ["temple", "temples", "kyoto", "india", "japan", "new delhi"]
   },
   {
+    category: "Temple",
+    title: "Quiet architectural wonders",
+    description: "Walk through peaceful temple grounds and discover stories shaped by time and tradition.",
+    destinations: "Kyoto · New Delhi",
+    images: ["images/temple1.jpg", "images/temple2.jpg"],
+    keywords: ["temple", "temples", "architecture", "kyoto", "india"]
+  },
+  {
     category: "Country",
     title: "Japan in every season",
     description: "Move from neon city streets to peaceful gardens, mountain towns, and unforgettable food.",
@@ -39,14 +47,14 @@ const recommendations = [
     images: ["images/country1.jpg", "images/country2.jpg"],
     keywords: ["india", "country", "jaipur", "kerala", "asia"]
   },
-  {
-    category: "Country",
-    title: "The spirit of Pakistan",
-    description: "From lively cities to dramatic mountains, find warm hospitality and remarkable scenery.",
-    destinations: "Pakistan · Hunza · Lahore",
-    images: ["images/country1.jpg", "images/country2.jpg"],
-    keywords: ["pakistan", "country", "hunza", "lahore", "asia"]
-  }
+  // {
+  //   category: "Country",
+  //   title: "The spirit of Pakistan",
+  //   description: "From lively cities to dramatic mountains, find warm hospitality and remarkable scenery.",
+  //   destinations: "Pakistan · Hunza · Lahore",
+  //   images: ["images/country1.jpg", "images/country2.jpg"],
+  //   keywords: ["pakistan", "country", "hunza", "lahore", "asia"]
+  // }
 ];
 
 function createRecommendationCard(recommendation) {
